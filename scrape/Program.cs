@@ -14,9 +14,6 @@ namespace brievenbussen
         {
             var allemaal = new List<Brievenbus>();
 
-
-            Console.WriteLine("Hello World!");
-
             var minx = 3.10;
             var maxx = 7.20;
             var miny = 50.70;
@@ -43,7 +40,6 @@ namespace brievenbussen
                 }
             }
 
-
             var geojson = new GeojsonFile();
             geojson.type = "FeatureCollection";
             var features = new List<Feature>();
@@ -63,7 +59,7 @@ namespace brievenbussen
                 var props = new Dictionary<string, object>();
                 props.Add("id", b.id);
                 props.Add("name", b.name);
-                f.Properties = props;
+                f.properties = props;
                 features.Add(f);
 
             }

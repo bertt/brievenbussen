@@ -12,7 +12,7 @@ namespace brievenbussen
     {
         public string type { get; set; }
         public Geometry geometry { get; set; }
-        public Dictionary<string, object> Properties { get; set; }
+        public Dictionary<string, object> properties { get; set; }
     }
 
     public class Geometry
